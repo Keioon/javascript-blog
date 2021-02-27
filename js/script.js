@@ -1,6 +1,7 @@
 'use strict';
 
 function titleClickHandler(){
+  event.preventDefault();
   const clickedElement = this;
   console.log('Link was clicked!');
 
