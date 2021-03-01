@@ -21,12 +21,19 @@ function titleClickHandler(){
   for(let activeArticle of activeArticles){
     activeArticle.classList.remove('active');
   }
+    
+  /* get 'href' attribute from the clicked link */
+  const articleSelector = clickedElement.getAttribute('href');
+  console.log('articleSelector: ', articleSelector);
+    
+  /* find the correct article using  the selector (value of 'href' atribute) */
+  const targetArticle = document.querySelector(articleSelector);
+  console.log('targetArticle: ', targetArticle);
+
+  /* add class 'active' to the correct article */
+  targetArticle.classList.add('active');  
+  console.log('add:', activeArticles);
 }
-/* get 'href' attribute from the clicked link */
-
-/* find the correct article using  the selector (value of 'href' atribute) */
-
-/* add class 'active' to the correct article */
 
 const links = document.querySelectorAll('.titles a');
 
