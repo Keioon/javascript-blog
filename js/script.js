@@ -1,6 +1,6 @@
 'use strict';
 
-function titleClickHandler(){
+function titleClickHandler(event){
   event.preventDefault();
   const clickedElement = this;
   console.log('Link was clicked!');
@@ -51,7 +51,6 @@ function generateTitleLinks(){
     
   let html='';
   for(let article of articles){
-    article = document.querySelector(optArticleSelector);
     console.log('article: ', article);
       
     /* get the article id */
@@ -66,7 +65,10 @@ function generateTitleLinks(){
     console.log('linkHTML: ', linkHTML);
       
     /* create HTML of the link */
-    
+    /*
+    titleList.insertAdjacentHTML('beforend', linkHTML);
+    podstawy->dom->obiekty kursjs
+    */
       
 
     /* insert link into titleList */
