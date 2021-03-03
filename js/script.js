@@ -37,9 +37,7 @@ function titleClickHandler(event){
 
 
 
-const optArticleSelector = '.post',  
-optTitleSelector = '.post-title', 
-optTitleListSelector = '.titles';
+const optArticleSelector = '.post', optTitleSelector = '.post-title', optTitleListSelector = '.titles';
 
 function generateTitleLinks(){
   /* remove contents of titleList */
@@ -72,7 +70,7 @@ function generateTitleLinks(){
       
 
     /* insert link into titleList */
-      html = html + linkHTML;
+    html = html + linkHTML;
   }
   titleList.innerHTML = html;
     
