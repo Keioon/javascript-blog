@@ -135,11 +135,11 @@ function tagClickHandler(event){
 
 function addClickListenersToTags(){
   /* find all links to tags */
-  const linkTags = document.querySelectorAll('a[href^="tag-"]');
+  const linkTags = document.querySelectorAll('a[href^="#tag-"]');
   /* START LOOP: for each link */
   for(let linkTag of linkTags){
   /* add tagClickHandler as event listener for that link */
-    linkTag.addEventListener(tagClickHandler);
+    linkTag.addEventListener('click', tagClickHandler);
   /* END LOOP: for each link */
   }
 }
@@ -153,7 +153,7 @@ function generateAuthors(){
   /* START LOOP: for every authors: */
   for(let author of authors){
     /* find tags wrapper */
-    const authorWrapper = author.querySelectorAll(optArticleAuthorSelector);
+    const authorWrapper = author.querySelector(optArticleAuthorSelector);
     console.log('authorWrapper: ', authorWrapper);
     /* get tags from post-autor attribute */
     const authorTag = author.getAttribute('data-author');  
