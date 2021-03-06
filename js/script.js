@@ -91,7 +91,7 @@ function generateTags(){
     /* START LOOP: for each tag */
     for(let tag of articleTagsArray){
       /* generate HTML of the link */
-      const linkHTML = '<li><a href="#tag-' + tag + '">' + tag + '</a></li>';
+      const linkHTML = '<li><a href="#tag-' + tag + '">' + tag + '</a></li>' + ' ';
       /* add generated code to html variable */
       html = html + linkHTML;
       /* END LOOP: for each tag */
@@ -161,7 +161,7 @@ function generateAuthors(){
     let html = '';
     console.log('authorTag: ', authorTag);
     /* generate HTML of the link */
-    const linkHTML =  '<li><a href="#author-' + authorTag + '">' + authorTag + '</a></li>';
+    const linkHTML =  '<a href="#author-' + authorTag + '">' + authorTag + '</a>';
     console.log('linkHTML: ', linkHTML);
     /* add generated code to html variable */
     html = html + linkHTML;
