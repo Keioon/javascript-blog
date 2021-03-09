@@ -44,6 +44,24 @@ body {
       flex: 1 0 0;
 }
 
+.sidebar a.tag-size-5 {
+  font-size: 24px;
+  font-weight: 900;
+  color: crimson;
+}
+
+.sidebar a.tag-size-3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: darkgoldenrod;
+}
+
+.sidebar a.tag-size-1 {
+  font-size: 16px;
+  font-weight: 100;
+  color: green;
+}
+
 .posts {
   -ms-flex: 2 0 0px;
       flex: 2 0 0;
@@ -82,8 +100,14 @@ body {
 }
 
 /* Authors */
+.authors {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .authors li {
   margin-bottom: 12px;
+  display: inline;
 }
 
 /* Post */
@@ -106,5 +130,14 @@ body {
 
 .post-tags p {
   margin: 0 10px 0 0;
+}
+
+.tags {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tags li {
+  display: inline;
 }
 /*# sourceMappingURL=style.css.map */
