@@ -34,6 +34,7 @@ body {
   text-transform: uppercase;
   font-family: $font-header;
   font-weight: 600;
+    
   span {
     text-transform: none;
     font-weight: 400;
@@ -49,17 +50,20 @@ body {
 }
 
 .sidebar {
-  flex: 1 0 0;      
+  flex: 1 0 0;
+    
   a.tag-size-5{
     font-size: 24px;
     font-weight: 900;
     color: crimson;
-  } 
+  }
+    
   a.tag-size-3{
     font-size: 20px;
     font-weight: 400;
     color: darkgoldenrod;
-  }    
+  }
+    
   a.tag-size-1{
     font-size: 16px;
     font-weight: 100;
@@ -95,6 +99,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+    
   .active {
     font-weight: bold;
   }
@@ -110,6 +115,7 @@ body {
 
 .authors {
   flex-wrap: wrap;
+    
   li {
     margin-bottom: 12px;
     display: inline;
@@ -120,6 +126,7 @@ body {
 
 .post {
   display: none;
+    
   &.active {
     display: block;
   }
@@ -131,6 +138,7 @@ body {
 
 .post-tags {
   display: flex;
+    
   p {
     margin: 0 10px 0 0;
   }
@@ -138,6 +146,7 @@ body {
 
 .tags{
   flex-wrap: wrap;
+    
   li{
     display: inline;
   }
